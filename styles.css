@@ -3,7 +3,10 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url('https://about300.files.wordpress.com/2013/08/20130829-012159.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1500px;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
