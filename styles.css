@@ -3,28 +3,42 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url('https://about300.files.wordpress.com/2013/08/20130829-012159.jpg');
+  background-image: url('./iphone-background-dancefloor.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1500px;
+  background-size: 1700px;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: black;
 }
 .title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+  padding: 5px 12px;
+  float: center;
+  top: 100;
+  left: 100;
+  color: black;
+  background-color: lightgrey;
+  border-radius: 4px
 }
 .topbar{
-  height:32px;
-  background-color: #555;
+  height:35px;
+  width: 1000px;
+  background-color: #48687F;
+  opacity: 0.70;
+  border-radius: 8px;
 }
 .title{
-  background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
+.blinkyDancer {
+  border: 10px solid red;
+  border-radius: 10px;
+  position: absolute;
+}
+.stinkyDancer{
+  height: 70px;
+  width: 70px;
+  background-size: contain;
+  background-image: url('./poo-emoji.png');
   position:absolute;
 }
