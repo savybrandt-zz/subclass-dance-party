@@ -28,6 +28,24 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+  });
+
+  $('.lineUpButton').on('click', function(event) {
+    window.dancers.forEach(function(element) {
+      element.$node.css('top', '500px');
+    });
+  });
+
+  $('.pairUpButton').on('click', function(event) {
+    for (var i = 0; i < window.dancers.length;) { 
+      var left = window.dancers[i].left + 70;
+      left = left.toString() + 'px';
+      var top = window.dancers[i].top;
+      top = top.toString() + 'px';
+      window.dancers[i + 1].$node.css({left: left, top: top});
+      i = i + 2;
+    }
   });
 });
 

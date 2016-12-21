@@ -12,7 +12,7 @@ body{
 body, a:link, a:visited, a:active{
   color: black;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .lineUpButton, .pairUpButton {
   padding: 5px 12px;
   float: center;
   top: 100;
@@ -30,14 +30,16 @@ body, a:link, a:visited, a:active{
 }
 .title{
 }
-.blinkyDancer {
-  border: 10px solid red;
-  border-radius: 10px;
+.winkyDancer{
+  height: 90px;
+  width: 90px;
+  background-size: contain;
+  background-image: url('./winkyface.png');
   position: absolute;
-}
+} 
 .stinkyDancer{
-  height: 70px;
-  width: 70px;
+  height: 90px;
+  width: 90px;
   background-size: contain;
   background-image: url('./poo-emoji.png');
   position:absolute;
