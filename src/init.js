@@ -23,8 +23,8 @@ $(document).ready(function() {
     // make a dancer with a random position
     
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      650 * Math.random() + 120,
+      1200 * Math.random() + 300,
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
@@ -46,6 +46,9 @@ $(document).ready(function() {
       window.dancers[i + 1].$node.css({left: left, top: top});
       i = i + 2;
     }
+  });
+  $('.stinkyDancer').on('hover', function(event) {
+
   });
 });
 
